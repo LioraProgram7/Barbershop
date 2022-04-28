@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'CrimsonPro-Regular';
+  src: local('CrimsonPro-Regular'),
+    url('../fonts/CrimsonPro-Regular.woff2') format('woff2'),
+    url('../fonts/CrimsonPro-Regular.woff') format('woff');
+  font-weight: 400;
+  font-stile: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CrimsonPro-Italic';
+  src: local('CrimsonPro-Italic'),
+    url('../fonts/CrimsonPro-Italic.woff2') format('woff2'),
+    url('../fonts/CrimsonPro-Italic.woff') format('woff');
+  font-weight: 400;
+  font-stile: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CrimsonPro-Medium';
+  src: local('CrimsonPro-Medium'),
+    url('../fonts/CrimsonPro-Medium.woff2') format('woff2'),
+    url('../fonts/CrimsonPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-stile: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CrimsonPro-MediumItalic';
+  src: local('CrimsonPro-MediumItalic'),
+    url('../fonts/CrimsonPro-MediumItalic.woff2') format('woff2'),
+    url('../fonts/CrimsonPro-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-stile: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'CrimsonPro-Bold';
+  src: local('CrimsonPro-Bold'),
+    url('../fonts/CrimsonPro-Bold.woff2') format('woff2'),
+    url('../fonts/CrimsonPro-Bold.woff') format('woff');
+  font-weight: 700;
+  font-stile: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CrimsonPro-BoldItalic';
+  src: local('CrimsonPro-BoldItalic'),
+    url('../fonts/CrimsonPro-BoldItalic.woff2') format('woff2'),
+    url('../fonts/CrimsonPro-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-stile: italic;
+  font-display: swap;
+}

@@ -1,0 +1,39 @@
+$bd: #101010;
+$bd2: #212226;
+$dark-blue: #2d2e32;
+$white: #ffffff;
+$orange: #ef9926;
+// $orange: #df6a17;
+$lite-brown: #86601c;
+
+
+
+%regular-400 {
+  font-family: 'CrimsonPro-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%italic-400 {
+  font-family: 'CrimsonPro-Italic', sans-serif;
+  font-weight: 400;
+}
+
+%mediumItalic-500 {
+  font-family: 'CrimsonPro-MediumItalic', sans-serif;
+  font-weight: 500;
+}
+
+%medium-500 {
+  font-family: 'CrimsonPro-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%bold-700 {
+  font-family: 'CrimsonPro-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%boldItalic-700 {
+  font-family: 'CrimsonPro-BoldItalic', sans-serif;
+  font-weight: 700;
+}
