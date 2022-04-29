@@ -1,0 +1,50 @@
+.get-started {
+  margin-top: 160px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__container::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/cover-header.png');
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+  }
+
+  &__content {
+    height: calc(100vh - 160px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__block-text {
+    max-width: 576px;
+    z-index: 1;
+  }
+}
+
+.block-text {
+  &__title {
+    @extend %bold-700;
+    font-size: 75px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+
+    span {
+      color: $orange;
+    }
+  }
+
+  &__text {
+    opacity: 0.75;
+    margin-bottom: 90px;
+  }
+}
