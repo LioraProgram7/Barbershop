@@ -81,6 +81,24 @@ body {
   }
 }
 
+.block-text {
+  &__title {
+    @extend %bold-700;
+    font-size: 70px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+
+    span {
+      color: $orange;
+    }
+  }
+
+  &__text {
+    opacity: 0.85;
+    margin-bottom: 90px;
+  }
+}
+
 
 @media (max-width: $xl) {
   [class*="__container"] {
