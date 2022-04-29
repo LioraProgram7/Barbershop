@@ -4,7 +4,7 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__media {
@@ -14,12 +14,12 @@
     margin-right: 100px;
   }
 
-  // .our-history__img {}
-
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 526px;
+    width: 100%;
   }
 
   .block-text__text {
