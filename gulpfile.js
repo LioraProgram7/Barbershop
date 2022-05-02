@@ -55,6 +55,7 @@ function images() {
   .pipe(dest('dist/images'));
 }
 
+
 function build() {
   return src ([
     'app/**/*.html',
