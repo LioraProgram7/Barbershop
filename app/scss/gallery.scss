@@ -1,0 +1,34 @@
+.gallery {
+  padding: 140px 0;
+  background-color: $bd2;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: rgba(20, 21, 23, 0.1);
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__image {
+    object-fit: contain;
+  }
+}
