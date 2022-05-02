@@ -1,0 +1,42 @@
+.stylists {
+  padding: 100px 0;
+  text-align: center;
+  background-color: $bd2;
+
+  &__text {
+    margin-bottom: 60px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 390px;
+    width: 100%;
+    height: 520px;
+    border: 1px solid $orange-hover;
+  }
+
+  &__expert {
+    display: inline-block;
+    max-width: 390px;
+    width: 100%;
+    height: 390px;
+    object-fit: contain;
+    background-color: $orange;
+  }
+
+  &__box {
+    padding: 15px;
+  }
+
+  &__name {
+    font-size: 30px;
+  }
+
+  &__position {
+    font-size: 22px;
+  }
+}

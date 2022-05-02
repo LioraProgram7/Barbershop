@@ -19,11 +19,11 @@
     padding: 50px 41px 72px;
     color: $bd;
     background-color: $white;
-    box-shadow: 0px 5px 0px $orange-hover;
+    box-shadow: 0px 5px 1px $orange-hover;
     border-radius: 29px;
     z-index: 1;
     cursor: pointer;
-    transition: color 0.2s, background-color 0.5s;
+    transition: color 0.2s, background-color 0.5s, transform 0.5s;
 
     &:not(:last-child) {
       margin-right: 50px;
@@ -32,6 +32,7 @@
     &:hover {
       background-color: $orange-hover;
       color: $white;
+      transform: scale(1.03);
     }
   }
 
