@@ -28,3 +28,51 @@
     }
   }
 }
+
+
+
+@media (max-width: $xl) {
+  .our-history {
+    &__media {
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .our-history {
+    padding: 50px 0;
+    text-align: center;
+
+    &__container {
+      flex-wrap: wrap;
+    }
+
+    .block-text {
+      &__text {
+        p:not(:last-child) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__media {
+      max-width: 250px;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .our-history {
+    &__container {
+      flex-wrap: wrap;
+    }
+
+    &__media {
+      max-width: 200px;
+      margin-bottom: 15px;
+    }
+  }
+}

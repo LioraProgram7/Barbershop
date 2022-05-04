@@ -1,5 +1,5 @@
 .get-started {
-  margin-top: 160px;
+  margin-top: 120px;
 
   &__container {
     position: relative;
@@ -19,13 +19,11 @@
   }
 
   &__content {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 120px);
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
-
 
   &__block-text {
     max-width: 576px;
@@ -33,6 +31,43 @@
 
     &__title {
       font-size: 75px;
+    }
+  }
+}
+
+
+@media (max-width: $lg) {
+  .get-started {
+    margin-top: 100px;
+
+    &__block-text {
+      max-width: 470px;
+    }
+
+    &__content {
+      height: calc(100vh - 100px);
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .get-started {
+    margin-top: 80px;
+
+    &__content {
+      height: calc(100vh - 80px);
+    }
+
+    &__block-text {
+      max-width: 370px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .get-started {
+    &__container::before {
+      display: none;
     }
   }
 }

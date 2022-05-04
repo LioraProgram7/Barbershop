@@ -11,7 +11,7 @@ $brown: #231910;
 // $lite-brown: #86601c;
 
 
-  $sm: 576px;
+  $sm: 565px;
   $md: 768px;
   $lg: 992px;
   $xl: 1300px;
@@ -51,4 +51,10 @@ $brown: #231910;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+%none-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
 }
