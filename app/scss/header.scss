@@ -49,11 +49,15 @@
 
 
 
-
-
 @media (max-width: $lg) {
-  .menu__item:not(:last-child) {
-    margin-right: 5px;
+  .menu {
+    &__item:not(:last-child) {
+      margin-right: 5px;
+    }
+
+    &__link {
+      font-size: 20px;
+    }
   }
 
   .header {

@@ -1,5 +1,5 @@
 .services {
-  padding: 140px 0;
+  padding: 100px 0;
   text-align: center;
 
   &__title {
@@ -15,7 +15,7 @@
     position: relative;
     max-width: 441px;
     width: 100%;
-    height: 533px;
+    height: 470px;
     padding: 50px 41px 72px;
     color: $bd;
     background-color: $white;
@@ -83,7 +83,43 @@
 
   &__subtitle {
     @extend %bold-700;
-    font-size: 45px;
+    font-size: 30px;
     margin-bottom: 15px;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+}
+
+
+@media (max-width: $xl) {
+  .services {
+    &__item:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    &__subtitle {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+
+@media (max-width: $md) {
+  .services {
+    padding: 30px 0 40px;
+
+    &__box {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
   }
 }

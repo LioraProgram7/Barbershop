@@ -7,41 +7,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barbershop</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#ef9926">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body id="body">
 
   <header class="header">
     <div class="header__container">
-      <a class="logo" href="#">
+      <a class="header__logo logo" href="#body">
         <img class="logo__img" src="images/logo.png" alt="logo">
       </a>
-      <button class="menu__btn">
+      <button class="menu__btn" type="button">
         <span></span>
       </button>
       <nav class="header__menu menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" href="#">Home</a>
+            <a class="menu__link" href="#our-history">About us</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">History</a>
+            <a class="menu__link" href="#services">Services</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Service</a>
+            <a class="menu__link" href="#gallery">Gallary</a>
           </li>
+
           <li class="menu__item">
-            <a class="menu__link" href="#">Gallary</a>
+            <a class="menu__link" href="#reviews">Reviews</a>
           </li>
+
           <li class="menu__item">
-            <a class="menu__link" href="#">Contacts</a>
+            <a class="menu__link" href="#stylists">Stylists</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
-      <a class="header__appointment btn-default" href="#">
+      <button class="header__appointment btn-default" type="button">
         appointment
-      </a>
+      </button>
     </div>
   </header>
 
@@ -50,48 +63,58 @@
     <section class="get-started">
       <div class="get-started__container">
         <div class="get-started__content">
-          <div class="get-started__block-text block-text">
+          <div class="get-started__block-text block-text wow animate__fadeInLeft" data-wow-duration="2s">
             <h1 class="block-text__title">
               <span>Hairstyle</span> Reflects The Personality Inside You
             </h1>
             <p class="block-text__text">
-              It is a long established fact that a reader will be distracted by the readable content of a page w
-              hen looking at.
+              We do everything to emphasize the individuality of each of our visitors and create their unique style.
             </p>
-            <a class="block-text__started btn-default" href="#">Get Started</a>
+            <button class="block-text__started btn-default" type="button">
+              Get Started
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-<section class="our-history">
+    <section class="our-history" id="our-history">
       <div class="our-history__container">
         <div class="our-history__media">
-          <img class="our-history__img" src="images/gallery/history.jpg" alt="kmkldmlk">
+          <img class="our-history__img" src="images/gallery/history.jpg" alt="barbershop premises">
         </div>
 
         <div class="our-history__content">
-          <div class="our-history__block-text block-text">
+          <div class="our-history__block-text block-text wow animate__fadeInRight" data-wow-duration="3s">
             <h2 class="block-text__title">
-              <span>Our</span> History
+              Our <span>History</span>
             </h2>
             <div class="block-text__text">
               <p>
-                It is a long established fact that a reader will be distracted by the readable content of a page w
-                hen looking at.
+                We have everything a real man needs:
+                atmosphere of brutality and masculine spirit, professionalism of barbers and preservation of European
+                traditions of Berbering, as well as great coffee and good company.
               </p>
               <p>
-                It is a long established fact that a reader will be distracted by the readable content of a page w
-                hen looking at.
+                This is the place where you will be helped to find your own unique style. It is worth trusting the
+                masters
+                of OldBoy
+                once, and, believe me, the new image will not leave you indifferent. Men's haircuts and dangerous shaves
+                are
+                our profile, and we are sure that our barbers do it best. As the famous Ralph once said
+                Lauren: "Whatever lifestyle you lead, you must have your own style, your own
+                world".
               </p>
             </div>
-            <button class="block-text__started btn-default" type="button">Learn more</button>
+            <button class="block-text__started btn-default" type="button">
+              Learn more
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-<!-- <section class="services">
+    <section class="services" id="services">
       <div class="services__container">
         <h2 class="services__title block-text__title">
           Services We <span>Provide</span>
@@ -99,221 +122,237 @@
         <div class="services__box">
           <a class="services__item">
             <div class="services__svg services__svg--skissors"></div>
-            <h3 class="services__subtitle">Hair Cut</h3>
+            <h3 class="services__subtitle">
+              Male haircuts
+            </h3>
             <p class="services__text block-text__text">
-              long established fact that a reacted by the readable content of hen looking at.
+              the best quality
             </p>
           </a>
 
           <a class="services__item">
             <div class="services__svg services__svg--electricrazor"></div>
-            <h3 class="services__subtitle">Beard Cut</h3>
+            <h3 class="services__subtitle">
+              Shave beard and head
+            </h3>
             <p class="services__text block-text__text">
-              long established fact that a reacted by the readable content of hen looking at
+              style and professionalism
             </p>
           </a>
 
           <a class="services__item">
             <div class="services__svg services__svg--jars"></div>
-            <h3 class="services__subtitle">Facial Pack</h3>
+            <h3 class="services__subtitle">
+              Mustache and beard trim
+            </h3>
             <p class="services__text block-text__text">
-              hen looking at.
+              our specialty
             </p>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="gallery__container">
         <h2 class="gallery__title block-text__title">
           Our <span>Gallery</span>
         </h2>
         <ul class="gallery__inner">
           <li class="gallery__item">
-            <img class="gallery__image" src="images/gallery/1.jpg" alt="">
+            <img class="gallery__image" src="images/gallery/1.jpg" alt="head wash">
           </li>
 
           <li class="gallery__item">
-            <img class="gallery__image" src="images/gallery/2.jpg" alt="">
+            <img class="gallery__image" src="images/gallery/2.jpg" alt="shaving">
           </li>
 
           <li class="gallery__item">
-            <img class="gallery__image" src="images/gallery/3.jpg" alt="">
+            <img class="gallery__image" src="images/gallery/3.jpg" alt="haircut">
           </li>
 
           <li class="gallery__item">
-            <img class="gallery__image" src="images/gallery/4.jpg" alt="">
+            <img class="gallery__image" src="images/gallery/4.jpg" alt="armchairs for comfort">
           </li>
 
           <li class="gallery__item">
-            <img class="gallery__image" src="images/gallery/5.jpg" alt="">
+            <img class="gallery__image" src="images/gallery/5.jpg" alt="child's haircut">
           </li>
 
           <li class="gallery__item">
-            <img class="gallery__image" src="images/gallery/6.jpg" alt="">
-          </li>
-
-          <li class="gallery__item">
-            <img class="gallery__image" src="images/gallery/7.jpg" alt="">
-          </li>
-
-          <li class="gallery__item">
-            <img class="gallery__image" src="images/gallery/8.jpg" alt="">
-          </li>
-
-          <li class="gallery__item">
-            <img class="gallery__image" src="images/gallery/9.jpg" alt="">
+            <img class="gallery__image" src="images/gallery/6.jpg" alt="the master is waiting for the client">
           </li>
         </ul>
-        <a class="gallery__viev btn-default" href="#">Viev all</a>
+        <button class="gallery__viev btn-default" type="button">Viev all</button>
       </div>
     </section>
 
-   <section class="reviews" style="background-image: url('images/reviews-bg.jpg')">
+    <section class="reviews" id="reviews" style="background-image: url('images/reviews-bg.jpg')">
       <div class="reviews__container">
         <h2 class="reviews__title block-text__title">Reviews</h2>
-        <div class="reviews__inner">
-          <div class="reviews__box">
-            <img class="reviews__img-client" src="images/reviews/1.jpg" alt="">
-            <div class="reviews__comments">
-              <p class="reviews__text">
-                long established fact that a reacted by the readable content of hen looking at. long established
-                fact
-                that a reacted by the readable content of hen looking at.
-              </p>
-              <span class="reviews__name">Malik green</span>
+        <div class="reviews__wrapper">
+          <div class="reviews__inner">
+            <div class="reviews__box">
+              <img class="reviews__img-client" src="images/reviews/1.jpg" alt="client foto">
+              <div class="reviews__comments">
+                <p class="reviews__text">
+                  For the third time and definitely not the last ;) Everything is super - and haircuts, and
+                  communication, and ... music;)
+                </p>
+                <span class="reviews__name">Tomas</span>
+              </div>
+            </div>
+
+            <div class="reviews__box">
+              <img class="reviews__img-client" src="images/reviews/2.jpg" alt="client foto">
+              <div class="reviews__comments">
+                <p class="reviews__text">
+                  Good hairdressers, fast and beautiful cut. Friendly atmosphere and exclusive interior, you will hardly
+                  find a better place to look great! I recommend!
+                </p>
+                <span class="reviews__name">Malik green</span>
+              </div>
             </div>
           </div>
 
-          <div class="reviews__box">
-            <img class="reviews__img-client" src="images/reviews/2.jpg" alt="">
-            <div class="reviews__comments">
-              <p class="reviews__text">
-                long established fact that a reacted by the readable content of hen looking at.
-                long established fact that a reacted by the readable content of hen looking at.
-              </p>
-              <span class="reviews__name">Malik green</span>
+          <div class="reviews__inner">
+            <div class="reviews__box">
+              <img class="reviews__img-client" src="images/reviews/3.jpg" alt="client foto">
+              <div class="reviews__comments">
+                <p class="reviews__text">
+                  This is not the first time I visit this salon. I will continue. I really suggest everyone try cutting
+                  it at least once. Pleasant communication, constantly offer something new. Men work very well and
+                  qualitatively. Thanks for nice.
+                </p>
+                <span class="reviews__name">Stas</span>
+              </div>
+            </div>
+
+            <div class="reviews__box">
+              <img class="reviews__img-client" src="images/reviews/4.jpg" alt="client foto">
+              <div class="reviews__comments">
+                <p class="reviews__text">
+                  This is not the first time I visit this salon. I will continue. I really suggest everyone try cutting
+                  it at least once. Pleasant communication, constantly offer something new. Men work very well and
+                  qualitatively. Thanks for nice.
+                </p>
+                <span class="reviews__name">Brutal</span>
+              </div>
             </div>
           </div>
-
-          <div class="reviews__box">
-            <img class="reviews__img-client" src="images/reviews/3.jpg" alt="">
-            <div class="reviews__comments">
-              <p class="reviews__text">
-                long established fact that a reacted by the readable content of hen looking at. long established
-                fact
-                that a reacted by the readable content of hen looking at.
-              </p>
-              <span class="reviews__name">Malik green</span>
+          <div class="reviews__inner">
+            <div class="reviews__box">
+              <img class="reviews__img-client" src="images/reviews/5.jpg" alt="client foto">
+              <div class="reviews__comments">
+                <p class="reviews__text">
+                  Great service, nice owner, knows his stuff.
+                </p>
+                <span class="reviews__name">Denis</span>
+              </div>
             </div>
-          </div>
 
-          <div class="reviews__box">
-            <img class="reviews__img-client" src="images/reviews/4.jpg" alt="">
-            <div class="reviews__comments">
-              <p class="reviews__text">
-                long established fact that a reacted by the readable content of hen looking at.
-                long established fact that a reacted by the readable content of hen looking at.
-              </p>
-              <span class="reviews__name">Malik green</span>
+            <div class="reviews__box">
+              <img class="reviews__img-client" src="images/reviews/6.jpg" alt="client foto">
+              <div class="reviews__comments">
+                <p class="reviews__text">
+                  The atmosphere in the salon is friendly.
+                </p>
+                <span class="reviews__name">David</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="stylists">
+    <section class="stylists" id="stylists">
       <div class="stylists__container">
         <h2 class="stylists__title block-text__title">
           <span>Expert</span> stylists
         </h2>
         <p class="stylists__text block-text__text">
-          long established fact that a reacted by the readable content.
+          The best barbers for you!
         </p>
         <ul class="stylists__inner">
           <li class="stylists__item">
-            <img class="stylists__expert" src="images/stylists/stylist1.png" alt="">
+            <img class="stylists__expert" src="images/stylists/stylist1.jpg" alt="photo of hairdresser Gari">
             <div class="stylists__box">
               <h4 class="stylists__name">Gari</h4>
-              <span class="stylists__position">hairdresser</span>
             </div>
           </li>
 
           <li class="stylists__item">
-            <img class="stylists__expert" src="images/stylists/stylist2.png" alt="">
+            <img class="stylists__expert" src="images/stylists/stylist2.jpg" alt="photo of hairdresser Lucy">
             <div class="stylists__box">
-              <h4 class="stylists__name">Lucy</h4>
-              <span class="stylists__position">hairdresser</span>
+              <h4 class="stylists__name">Daniel</h4>
             </div>
           </li>
 
           <li class="stylists__item">
-            <img class="stylists__expert" src="images/stylists/stylist3.png" alt="">
+            <img class="stylists__expert" src="images/stylists/stylist3.jpg" alt="photo of hairdresser Marc">
             <div class="stylists__box">
               <h4 class="stylists__name">Marc</h4>
-              <span class="stylists__position">hairdresser</span>
             </div>
           </li>
         </ul>
       </div>
     </section>
+
+    <section class="contacts" id="contacts" style="background-image: url('images/footer-bg.jpg')">
+      <div class="contacts__container">
+
+        <div class="contacts__info">
+          <h2 class="contacts__title block-text__title">
+            <span>Contacts</span>
+          </h2>
+          <p class="contacts__text block-text">
+            Lithuania,
+            Gedimino Avenue 5
+          </p>
+
+          <ul class="contacts__item">
+            <li class="contacts__list">
+              <a class="contacts__phone" href="tel:+37(050)1111111">
+                +37 (050) 111 11 11
+              </a>
+            </li>
+
+            <li class="contacts__list">
+              <a class="contacts__mail" href="mailto:barber-master@email.com">
+                barber-master@email.com
+              </a>
+            </li>
+          </ul>
+
+          <ul class="contacts__social">
+            <li class="contacts__social-item">
+              <a class="contacts__social-link contacts__social-link--facebook" href="#"></a>
+            </li>
+
+            <li class="contacts__social-item">
+              <a class="contacts__social-link contacts__social-link--twitter" href="#"></a>
+            </li>
+
+            <li class="contacts__social-item">
+              <a class="contacts__social-link contacts__social-link--google" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
 
-
-
-
-
-  <footer class="footer" style="background-image: url('images/footer-bg.jpg')">
+  <footer class="footer">
     <div class="footer__container">
-      
-      <div class="footer__info">
-        <a class="logo" href="#">
+      <a class="footer__logo logo" href="#body">
         <img class="logo__img" src="images/logo.png" alt="logo">
       </a>
-        <p class="footer__text block-text">
-          It is a long established fact that a reader will be distracted by the readable
-        </p>
-        <ul class="footer__item">
-          <li class="footer__list">
-            <a class="footer__phone" href="tel:+37(050)1111111">
-              +37 (050) 111 11 11
-            </a>
-          </li>
-
-          <li class="footer__list">
-            <a class="footer__mail" href="mailto:frontend-monster@email.com">
-              frontend-monster@email.com
-            </a>
-          </li>
-        </ul>
-
-        <ul class="footer__social">
-          <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--facebook" href="#"></a>
-          </li>
-
-          <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--twitter" href="#"></a>
-          </li>
-
-          <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--google" href="#"></a>
-          </li>
-        </ul>
-      </div>
-
     </div>
-  </footer> -->
-
-
-
-
+  </footer>
 
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
-
 </html>

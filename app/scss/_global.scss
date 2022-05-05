@@ -1,17 +1,4 @@
 
-// .sr-only {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   border: 0;
-//   padding: 0;
-//   white-space: nowrap;
-//   clip-path: inset(100%);
-//   clip: rect(0 0 0 0);
-//   overflow: hidden;
-// }
-
 [class*="__container"] {
   max-width: 1300px;
   padding: 0 15px;
@@ -93,20 +80,13 @@ body {
 }
 
 
-
-@media (max-width: $xl) {
-  [class*="__container"] {
-    max-width: 970px;
-  }
-}
-
 @media (max-width: $lg) {
   .logo {
     max-width: 100px;
   }
 
   .btn-default {
-    font-size: 22px;
+    font-size: 20px;
     max-width: 145px;
     height: 50px;
     padding: 7px;

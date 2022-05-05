@@ -1,10 +1,9 @@
 .reviews {
   position: relative;
-  padding: 140px 0;
+  padding: 145px 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  // text-align: center;
   z-index: 1;
 
   &::after {
@@ -18,15 +17,13 @@
     z-index: -1;
   }
 
-
   &__title {
-    margin-bottom: 150px;
+    margin-bottom: 70px;
     text-align: center;
   }
 
   &__inner {
     width: 1220px;
-    height: 600px;
   }
 
   .swiper {
@@ -41,11 +38,7 @@
 
   &__box {
     display: flex;
-    margin-bottom: 100px;
-
-    &:not(:last-child) {
-      margin-right: 60px;
-    }
+    margin-bottom: 60px;
   }
 
   &__img-client {
@@ -65,5 +58,99 @@
 
   &__name {
     font-size: 18px;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-25px);
+
+  li {
+    margin-right: 10px;
+
+    button {
+      padding: 0;
+      font-size: 0;
+      background-color: transparent;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid $white;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background-repeat: 50%;
+        background-color: $white;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  & .slick-active {
+    button {
+      border-color: $orange;
+
+      &::before {
+        background-color: $orange;
+      }
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .reviews {
+    padding: 60px 0 0;
+  }
+
+  .slick-dots {
+    transform: translateY(-70px);
+  }
+}
+
+@media (max-width: $md) {
+  .slick-dots {
+    transform: translateY(-100px);
+  }
+}
+
+@media (max-width: $sm) {
+  .reviews {
+    padding: 50px 0;
+
+    &__box {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    &__img-client {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    &__comments {
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
   }
 }
